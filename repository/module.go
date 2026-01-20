@@ -5,9 +5,9 @@ import (
 )
 
 type RepositoryModule struct {
-	database *db.DBModule
+	Database *db.DBModule
 }
 
 func RepositoryModuleInit(d *db.DBModule) *RepositoryModule {
-	return &RepositoryModule{database: d}
+	return &RepositoryModule{Database: d}
 }
